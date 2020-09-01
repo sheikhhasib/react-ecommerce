@@ -17,7 +17,7 @@ const Product = (props) => {
                     </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                    <Button variant="warning" onClick={() => props.productReview(product) } className="px-5">Add to Cart</Button>
+                    <Button variant="warning" onClick={() => props.addedProduct(product) } className="px-5">Add to Cart</Button>
                 </Card.Footer>
                 </Card>
             </CardDeck>

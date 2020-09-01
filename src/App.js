@@ -20,6 +20,9 @@ function App() {
           <Route path="/home">
             <Header></Header>
           </Route>
+          <Route exact path="/">
+            <Header></Header>
+          </Route>
           <Route path="/shop">
             <Header></Header>
             <Shop></Shop>
