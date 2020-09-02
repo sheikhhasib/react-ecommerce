@@ -1,11 +1,12 @@
-import React, { useState ,useEffect } from 'react';
+import React, { useState ,useEffect, useContext } from 'react';
 import fakeData from '../../fakeData';
 import Product from '../Product/Product';
 import { addToDatabaseCart } from '../../utilities/databaseManager';
+import { CartContext } from '../../App';
 
 const Shop = () => {
     const [products,setProduct] = useState([]);
-    const [cart,setCart] = useState([]);
+    const [cart,setCart] = useContext(CartContext);
     useEffect(()=>{
         setProduct(fakeData)
     },[])
